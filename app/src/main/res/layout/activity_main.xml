@@ -1,19 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:background="@color/white"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <com.ext.pagerdots.PagerDotsIndicator
+        android:id="@+id/dotsIndicator"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="10dp"
+        app:dotColor="@android:color/holo_orange_light"
+        app:selectedDotColor="@android:color/holo_orange_dark"
+        app:dotType="pill"
+        android:gravity="center"
+        app:animationType="scale"
+        app:dotSize="8dp"
+        app:dotSpacing="6dp"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.ext.pagerdots.PagerDotsIndicator
+        android:id="@+id/dotsIndicator1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:dotColor="@android:color/holo_blue_bright"
+        app:selectedDotColor="@android:color/holo_blue_dark"
+        app:dotType="circle"
+        android:gravity="center"
+        app:animationType="worm"
+        app:dotSize="8dp"
+        app:dotSpacing="6dp"/>
+
+    <com.ext.pagerdots.PagerDotsIndicator
+        android:id="@+id/dotsIndicator2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:dotColor="@android:color/holo_red_light"
+        app:selectedDotColor="@android:color/holo_red_dark"
+        app:dotType="square"
+        android:gravity="center"
+        app:animationType="fade"
+        app:dotSize="8dp"
+        app:dotSpacing="6dp"/>
+
+    <com.ext.pagerdots.PagerDotsIndicator
+        android:id="@+id/dotsIndicator3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:dotColor="@android:color/holo_green_light"
+        app:selectedDotColor="@android:color/holo_green_dark"
+        app:dotType="rounded_square"
+        android:gravity="center"
+        app:animationType="slide"
+        app:dotSize="8dp"
+        app:dotSpacing="6dp"/>
+
+    <com.ext.pagerdots.PagerDotsIndicator
+        android:id="@+id/dotsIndicator4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:dotColor="@android:color/holo_orange_light"
+        app:selectedDotColor="@android:color/holo_orange_dark"
+        app:dotType="triangle"
+        android:gravity="center"
+        app:animationType="slide"
+        app:dotSize="8dp"
+        app:dotSpacing="6dp"/>
+
+    <com.ext.pagerdots.PagerDotsIndicator
+        android:id="@+id/dotsIndicator5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:dotColor="@android:color/holo_purple"
+        app:selectedDotColor="@android:color/holo_blue_light"
+        app:dotType="line"
+        android:gravity="center"
+        app:animationType="slide"
+        app:dotSize="8dp"
+        app:dotSpacing="6dp"/>
+
+
+
+
+
+</LinearLayout>

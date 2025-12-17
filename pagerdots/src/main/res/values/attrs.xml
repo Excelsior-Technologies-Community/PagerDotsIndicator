@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PagerDotsIndicator">
+
+        <!-- Size & spacing -->
+        <attr name="dotSize" format="dimension"/>
+        <attr name="dotSpacing" format="dimension"/>
+
+        <!-- Colors -->
+        <attr name="dotColor" format="color"/>
+        <attr name="selectedDotColor" format="color"/>
+
+        <!-- Shape -->
+        <attr name="dotType">
+            <enum name="circle" value="0"/>
+            <enum name="square" value="1"/>
+            <enum name="rounded_square" value="2"/>
+            <enum name="pill" value="3"/>
+            <enum name="line" value="4"/>
+            <enum name="triangle" value="5"/>
+        </attr>
+
+        <!-- Animation -->
+        <attr name="animationType">
+            <enum name="none" value="0"/>
+            <enum name="scale" value="1"/>
+            <enum name="fade" value="2"/>
+            <enum name="slide" value="3"/>
+            <enum name="worm" value="4"/>
+        </attr>
+
+    </declare-styleable>
+
+</resources>
